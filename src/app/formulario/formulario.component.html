@@ -1,0 +1,20 @@
+<div class="bg-info p-4">
+    <form action="" class="text-center">
+        <select class="mr-3 add" name="opciones" [(ngModel)]="seleccionado">
+            <option [value]="item" *ngFor="let item of opciones"> {{ item }} </option>
+        </select>
+        <input type="text" placeholder="Descripcion" class="mr-3 form_inp desc" 
+        [(ngModel)]="descrip" name="descripcion" required autocomplete="off">
+        <input type="number" placeholder="Valor" class="mr-3 form_inp" 
+        [(ngModel)]="valor" name="ingresos">
+        <input type="submit" class="agregar" value="Agregar" (click)="enviar()">
+    </form>
+</div>
+<div class="text-center d-flex">
+    <div class="w-50 pt-2">
+        <h3>INGRESOS</h3>
+    </div>
+    <div class="w-50 pt-2">
+        <h3>EGRESOS</h3>
+    </div>
+</div>

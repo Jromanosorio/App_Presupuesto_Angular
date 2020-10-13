@@ -1,0 +1,28 @@
+.form_inp, .add{
+    padding: 7px;
+    border: unset;
+    width: 150px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.add{
+    width: 100px;
+}
+
+.desc{
+    width: 300px;
+}
+
+.agregar{
+    padding: 7px;
+    width: 80px;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    background-color: #007bff;
+}
+
+.agregar:hover{
+    background-color: #0069d9;
+}

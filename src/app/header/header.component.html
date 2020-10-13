@@ -1,0 +1,23 @@
+<div class="bg-dark p-4 text-white text-center">
+    <p>Presupuesto Disponible: </p>
+    <h1> $ {{ presupuesto }} </h1>
+    <div class="alert bg-info col-4 ml-auto mr-auto pl-5 pr-5 justify">
+        <div>Ingresos</div> <div>+ ${{ contador_ingresos }}</div>
+    </div>
+    <div class="alert bg-danger col-4 m-auto pl-5 pr-5 justify">
+        <div>Egresos</div> <div>- ${{ contador_egresos }}</div>
+    </div>
+</div>
+<app-formulario (emisor)="alerta($event)"></app-formulario>
+<div class="text-center d-flex">
+    <div class="w-50 pt-2">
+        <app-ingresos *ngFor="let item of llenar"
+        [detalle]="item"
+        ></app-ingresos>
+    </div>
+    <div class="w-50 pt-2">
+        <app-egresos *ngFor="let item of rellenar"
+        [det]="item"
+        ></app-egresos>
+    </div>
+</div>
